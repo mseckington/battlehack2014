@@ -37,3 +37,12 @@ list = List.create(
   title: 'Brad & Angelina',
   description: "Omg, we're like totally in love and getting like married."
 )
+
+list = List.create(
+  id: 3,
+  username: 'nph_testaccount',
+  password_digest: 'qwertyupoe',
+  image: 'http://uk.eonline.com/resize/500/500/eol_images/Entire_Site/201488/rs_300x300-140908055559-600.Neil-Patrick-Harris-David-Burtka-Wedding-JR-90814.jpg',
+  title: 'Neil & David',
+  description: "Our wedding's going to be, legen-dary!"
+)

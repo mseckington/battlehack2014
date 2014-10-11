@@ -1,6 +1,7 @@
 %h1 Lists
-%ul.lists
+%ul.lists.row
   - @lists.each do |list|
-    %li
+    %li.medium-4.columns
       = image_tag list.image
-      = link_to list.title, list_path(list)
+      %h1
+        = link_to list.title, list_path(list)
