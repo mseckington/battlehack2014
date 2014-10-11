@@ -1,5 +1,5 @@
 .payment_form
-  %h4 Donating to {Couples Name} Wedding List
+  %h4 Donating to #{@list.title} Wedding List
 
   =form_tag("/payment") do
     =label_tag(:amount, "How much are your giving to the couple:")
