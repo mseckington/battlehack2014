@@ -25,21 +25,5 @@ Product.create([
     image: "http://icons.iconarchive.com/icons/prepaidgamecards/gaming-gadgets/256/PlayStation-4-icon.png",
     position: 1,
     list: list
-  },
-
-  { name: "",
-    price: ,
-    description: "",
-    image: "",
-    position: ,
-    list_id: 1
-  },
-
-  { name: "",
-    price: ,
-    description: "",
-    image: "",
-    position: ,
-    list_id: 1
   }
 ])
