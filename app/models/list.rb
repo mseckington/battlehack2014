@@ -5,6 +5,7 @@ class List < ActiveRecord::Base
   has_secure_password
 
   has_many :products
+  has_many :donations
 
   class << self
     def authenticate(username, password)
@@ -12,5 +13,9 @@ class List < ActiveRecord::Base
       return nil unless list
       list.authenticate(password) ? list : nil
     end
+  end
+
+  def total_gifts
+    donations.sum(:price)
   end
 end

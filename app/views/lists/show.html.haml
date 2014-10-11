@@ -6,6 +6,8 @@
       .small-12.medium-8.columns
         %h1= @list.title
         %p= @list.description
+        %p Total for charity: #{formatted_donations(@list.total_gifts)}
+        %p Total gift fund: #{ formatted_gifts(@list.total_gifts) }
         = link_to "Contribute to #{@list.title}'s list", "/payment/new?list_id=#{@list.id}", class: "button button-med"
 
   .row
