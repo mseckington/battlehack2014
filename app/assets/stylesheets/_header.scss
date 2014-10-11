@@ -1,0 +1,51 @@
+header#global {
+  background: $primary-color;
+  text-align: center;
+  border-bottom: 5px solid $secondary-color;
+  
+  .lyst {
+    color: $secondary-color;
+  }
+  h1 {
+    font-family: $font-family-serif;
+    color: white;
+  }
+
+  ul {
+    list-style: none;
+    @include list-reset();
+
+    li {
+      display: inline-block;
+      padding: 2%;
+
+      a {
+        color: white;
+      }
+    }
+
+    li:nth-child(even) {
+      margin: 0 5%;
+    } 
+  }
+}
+
+@media #{$medium-up} {
+header#global {
+  text-align: left;
+  h1 {
+    padding-top: 8px;
+  }
+  
+  ul {
+    margin-top: 20px;
+    text-align: right;
+
+    li {
+      font-size: $h5-font-size;
+    }
+  }
+
+}
+
+}

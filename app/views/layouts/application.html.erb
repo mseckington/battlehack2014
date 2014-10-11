@@ -16,18 +16,22 @@
   <body>
     <header id="global">
       <div class="row">
-        <h1>Weddingly.st</h1>
-        <ul>
+        <h1 class="medium-6 columns">Wedding<span class="lyst">ly.st</span></h1>
+        <ul class="medium-6 columns">
           <li><a href="login">Login</a></li>
           <li><a href="signup">Sign Up</a></li>
           <li><a href="about">About</a></li>
         </ul>
       </div>
     </header>
-  <div class="row">
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
-  </div>
-
-</body>
+    <div class="row">
+      <%= yield %>
+      <%= javascript_include_tag "application" %>
+    </div>
+    <footer>
+      <div class="row">
+        <p>Please give me some footery love.</p>
+      </div>
+    </footer>
+  </body>
 </html>
