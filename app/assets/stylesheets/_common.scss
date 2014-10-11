@@ -45,5 +45,9 @@ header#global {
 	padding: 2% 10%;
 	text-align: center;
 	width: 80%;
+
+	&.primary {
+		background-color: $primary-color;
+	}
 }
 

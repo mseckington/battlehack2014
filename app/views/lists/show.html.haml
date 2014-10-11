@@ -6,6 +6,8 @@
       .small-8.columns
         %h1= @list.title
         %p= @list.description
+        %p.btn.primary
+          Contribute to #{@list.title}'s list 
 
 %section.small-12.columns.show-for-small-only 
   #thermometer
@@ -13,18 +15,14 @@
     This is a description of how far we've reached the target.
 
 .row
-  %section.small-12.medium-10.columns
-    %header 
-      %h1 Contribute to #{@list.title}'s list
-      %p To doodle doodle doodle doodle
-
+  %section.donate.small-12.medium-10.columns
     %ul.products
       - @list.products.each do |product|
         %li.row
           .small-2.columns
             =image_tag product.image
           .small-10.columns
-            %h1= product.name
+            %h3= product.name
             .description= product.description
             .price= formatted_price(product.price)
 

@@ -1,9 +1,13 @@
 .couple {
 
   header {
-    padding: 20px;
-    background-color: lighten($secondary-color, 15%);
     margin: 20px 0;
+    padding: 0 0 20px 0;
+    border-bottom: 1px dotted $primary-color;
+
+    h1 {
+      font-size: 3.74rem;
+    }
 
     img {
       width: 300px;
@@ -12,17 +16,33 @@
   }
 }
 
-.products {
-  @include list-reset();
+.donate {
+  header {
+    h1 {
+      font-size: $h2-font-size;
+    }
+  }
 
-  li {
-    border-top: 1px dotted $primary-color;
+  .products {
     @include list-reset();
-    margin: 20px 0;
-    padding: 10px 0;
 
-    .price {
-      font-size: $h3-font-size;
+    li {
+      border-bottom: 1px dotted $primary-color;
+      @include list-reset();
+      margin: 20px 0;
+      padding: 10px 0;
+
+      &:first-child {
+        margin-top: 0;
+      }
+
+      &:last-child {
+        border-bottom: none;
+      }
+
+      .price {
+        font-size: $h4-font-size;
+      }
     }
   }
 }
