@@ -11,6 +11,11 @@ Rails.application.routes.draw do
   get '/signup', :to => 'registrations#new'
   post '/signup', :to => 'registrations#create'
 
+  get '/login', :to => 'sessions#new'
+  post '/login', :to => 'sessions#create'
+  delete '/login', :to => 'sessions#destroy', :as => 'delete_session'
+  get '/logout', :to => 'sessions#destroy'
+
   resources :lists, only: [:index, :show]
 
   resource :payment

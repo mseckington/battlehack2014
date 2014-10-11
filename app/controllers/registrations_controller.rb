@@ -7,6 +7,7 @@ class RegistrationsController < ApplicationController
   def create
     @list = List.create(list_params)
     if @list.persisted?
+      login_as @list
       redirect_to lists_path
     else
       @list.password_confirmation = list_params[:password_confirmation]

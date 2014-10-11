@@ -5,4 +5,12 @@ class List < ActiveRecord::Base
   has_secure_password
 
   has_many :products
+
+  class << self
+    def authenticate(username, password)
+      list = List.find_by_username(username)
+      return nil unless list
+      list.authenticate(password) ? list : nil
+    end
+  end
 end
