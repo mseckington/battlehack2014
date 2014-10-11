@@ -1,0 +1,20 @@
+footer {
+  border-top: 5px solid $secondary-color;
+  background: $primary-color;
+  text-align: center;
+  color: white;
+  padding-bottom: 30px;
+
+  p {
+    margin-top: 20px;
+    color: lighten($secondary-color, 20%)
+  }
+
+  a {
+    color: white;
+
+    &:hover {
+      color: $highlight;
+    }
+  }
+}

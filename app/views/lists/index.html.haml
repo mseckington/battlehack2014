@@ -1,11 +1,14 @@
 .grey
   .row
-    .medium-10.columns
-
-      %p.large
-        Ever gone to a wedding and all the gifts on the wedding list are too expensive for just one person? WeddingLy.st allows every guest to contribute however much they want, which then gets split between a total gift kitty and a charity of the couple's choice.
-      %p
-        Odit pariatur dolor commodi explicabo, esse sed magni obcaecati minima aliquam, quas et architecto maiores reiciendis optio debitis nemo, perspiciatis qui magnam ducimus mollitia ipsa fugit amet accusantium, neque. Delectus ipsum iure, quibusdam itaque repellendus laboriosam alias quae officia! Et laudantium autem fugiat, illo assumenda neque architecto! Ea illum nostrum aliquam reprehenderit veritatis eaque possimus perferendis.
+    %h1.medium-12.columns
+      Keep your guests happy and your wedding presents awesome, while giving to charity
+      
+    %p.large.medium-10.columns
+      %strong WeddingLy.st 
+      allows your guests to contribute however much they are able to, without revealing the amount to you or your other attendees. Each contribution then gets split between a total gift kitty and a charity of your choice.
+      
+    %p.medium-12.columns
+      = link_to 'Create your own wedding list', signup_path, :class => 'button'
 
 .row
   %h1
@@ -14,6 +17,6 @@
   %ul.lists.row
     - @lists.each do |list|
       %li.medium-4.columns
-        = image_tag list.image
+        = link_to image_tag list.image
         %h1
           = link_to list.title, list_path(list)
