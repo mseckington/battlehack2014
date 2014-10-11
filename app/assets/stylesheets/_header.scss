@@ -3,12 +3,12 @@ header#global {
   text-align: center;
   padding: 15px 0 25px 0;
   border-top: 6px solid $secondary-color;
-  
+
   span {
     color: $secondary-color;
   }
 
-  h1 {
+  h1 a {
     font-family: $font-family-serif;
     color: white;
   }
@@ -40,7 +40,7 @@ header#global {
 
     li:nth-child(even) {
       margin: 0 5%;
-    } 
+    }
   }
 }
 
@@ -52,7 +52,7 @@ header#global {
     h1 {
       padding-top: 8px;
     }
-      
+
     ul {
       margin-top: 20px;
       text-align: right;

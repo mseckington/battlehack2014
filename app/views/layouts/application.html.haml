@@ -12,7 +12,8 @@
     %header#global
       .row
         %h1.medium-6.columns
-          Wedding#{ content_tag(:span) { 'ly.st' }}
+          = link_to root_path do
+            Wedding#{ content_tag(:span) { 'ly.st' }}
         %ul.medium-6.columns
           %li
             %a{:href => "/about"} About

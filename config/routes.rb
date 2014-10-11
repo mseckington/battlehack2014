@@ -16,6 +16,8 @@ Rails.application.routes.draw do
   delete '/login', :to => 'sessions#destroy', :as => 'delete_session'
   get '/logout', :to => 'sessions#destroy'
 
+  root 'lists#index'
+
   resources :lists, only: [:index, :show]
 
   resource :payment
