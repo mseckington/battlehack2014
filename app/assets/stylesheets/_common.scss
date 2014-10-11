@@ -7,6 +7,10 @@ body {
 	margin: 0;
 }
 
+a {
+	color: $highlight;
+}
+
 footer {
 	border-top: 5px solid $secondary-color;
 	background: $primary-color;

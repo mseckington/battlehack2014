@@ -1,11 +1,13 @@
 header#global {
   background: $primary-color;
   text-align: center;
-  border-bottom: 5px solid $secondary-color;
+  padding: 10px 0 15px 0;
+  border-top: 6px solid $secondary-color;
   
   .lyst {
     color: $secondary-color;
   }
+
   h1 {
     font-family: $font-family-serif;
     color: white;
@@ -31,21 +33,21 @@ header#global {
 }
 
 @media #{$medium-up} {
-header#global {
-  text-align: left;
-  h1 {
-    padding-top: 8px;
-  }
-  
-  ul {
-    margin-top: 20px;
-    text-align: right;
 
-    li {
-      font-size: $h5-font-size;
+  header#global {
+    text-align: left;
+
+    h1 {
+      padding-top: 8px;
+    }
+      
+    ul {
+      margin-top: 20px;
+      text-align: right;
+
+      li {
+        font-size: $h5-font-size;
+      }
     }
   }
-
-}
-
 }
