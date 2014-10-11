@@ -11,8 +11,9 @@ Product.delete_all
 
 list = List.create(
   id: 1,
-  username: 'testaccount',
-  password_digest: 'jkhaddsajkfhsf',
+  username: 'test@test.com',
+  password: 'test',
+  password_confirmation: 'test',
   image: 'http://missgeeky.com/wp-content/uploads/2014/10/mc.jpg',
   title: 'Melinda & Cristiano',
   description: "Yay, we're getting married!"
