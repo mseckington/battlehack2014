@@ -6,9 +6,7 @@
       .small-12.medium-8.columns
         %h1= @list.title
         %p= @list.description
-        %p.button.button-med
-          Contribute to #{@list.title}'s list 
-
+        = link_to "Contribute to #{@list.title}'s list", "/payment/new?list_id=#{@list.id}", class: "button button-med"
 .row
   .small-12.column
 

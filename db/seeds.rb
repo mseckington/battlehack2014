@@ -11,8 +11,9 @@ Product.delete_all
 
 list = List.create(
   id: 1,
-  username: 'testaccount',
-  password_digest: 'jkhaddsajkfhsf',
+  username: 'test@test.com',
+  password: 'test',
+  password_confirmation: 'test',
   image: 'http://missgeeky.com/wp-content/uploads/2014/10/mc.jpg',
   title: 'Melinda & Cristiano',
   description: "Yay, we're getting married!"
@@ -26,6 +27,22 @@ Product.create([
     image: "http://icons.iconarchive.com/icons/prepaidgamecards/gaming-gadgets/256/PlayStation-4-icon.png",
     position: 1,
     list: list
+  }
+])
+
+Donation.create([
+  { price: 9999,
+    message: "So so so happy for you",
+    twitter_id: "vikings",
+    list_id: 1,
+  }
+])
+
+Donation.create([
+  { price: 5217,
+    message: "couldnt buy you a sandbox",
+    twitter_id: "paypaldev",
+    list_id: 1,
   }
 ])
 
