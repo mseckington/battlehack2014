@@ -1,0 +1,19 @@
+.payment_form
+  %h4 Donating to {Couples Name} Wedding List
+
+  =form_tag("/payment") do
+    =label_tag(:amount, "How much are your giving to the couple:")
+    =text_field_tag(:amount)
+
+    %h5 Enter your credit card details below
+    %section{:id=>"dropin"}
+    %sub All transactions processed via Braintree Payments Sandbox
+    %br
+    %br
+    =submit_tag("Pay Now")
+
+
+:javascript
+  braintree.setup("#{@bt_client_token}", 'dropin', {
+    container: 'dropin'
+  });
