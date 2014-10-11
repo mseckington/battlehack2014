@@ -1,0 +1,18 @@
+.products {
+  @media #{$medium-up} {
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+
+  li {
+    border-top: 1px dotted $primary-color;
+    @include list-reset();
+    margin: 20px 0;
+    padding: 10px 0;
+
+    .price {
+      font-size: $h3-font-size;
+    }
+  }
+}
