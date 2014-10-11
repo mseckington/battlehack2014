@@ -1,12 +1,45 @@
-.global-header {
-	background: $primary;
+h1, h2, h3, h4, h5, h6 {
+	font-family: $font-family-serif;
 }
 
-h1 {
-	font-family: $title;
-
-}
-
-p {
+body {
 	font-family: $body;
+	margin: 0;
 }
+#wrapper {
+	width: 95%;
+	margin: 0 auto;
+}
+
+header {
+	background: $primary-color;
+		text-align: center;
+	h1 {
+		font-family: $font-family-serif;
+		color: white;
+		}
+	ul {
+		list-style: none;
+		li {
+			display: inline-block;
+			width: 25%;
+			padding: 10px;
+			background: $secondary-color;
+			a {
+				color: white;
+			}
+		}
+		li:nth-child(even) {
+			margin: 0 5%;
+			}	
+	}
+}
+
+.btn {
+	padding: 2% 10%;
+	text-align: center;
+	width: 80%;
+}
+
+// Media queries
+

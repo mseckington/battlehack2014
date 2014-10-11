@@ -8,25 +8,25 @@
 
     <%= stylesheet_link_tag    "application" %>
     <%= javascript_include_tag "vendor/modernizr" %>
+    <script src="https://js.braintreegateway.com/v2/braintree.js"></script>
     <%= csrf_meta_tags %>
   </head>
 
   <body>
-    <div class="wrapper">
-      <header class="global-header">
-        <h1>weddingly.st</h1>
-        <form>
-          <input type="text" placeholder="username">
-          <input type="text" placeholder="password">
-          <input type="submit" value="login">
-        </form>
-        <div class="btn">
-          Sign Up
+
+      <header>
+        <div class="row">
+          <h1>Weddingly.st</h1>
+          <ul>
+            <li><a href="login">Login</a></li>
+            <li><a href="signup">Sign Up</a></li>
+            <li><a href="about">About</a></li>
+          </ul>
         </div>
       </header>
-
+  <div class="row">
       <%= yield %>
       <%= javascript_include_tag "application" %>
-    </div>
+</div>
   </body>
 </html>

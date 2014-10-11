@@ -1,0 +1,10 @@
+<%= form_tag("/payment") do %>
+  <div id="dropin"></div>
+  <%= submit_tag("Pay Now") %>
+<% end %>
+
+<script type="application/javascript">
+  braintree.setup("<%= @bt_client_token %>", 'dropin', {
+    container: 'dropin'
+  });
+</script>
