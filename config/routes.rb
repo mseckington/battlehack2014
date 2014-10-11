@@ -8,6 +8,9 @@ Rails.application.routes.draw do
   # Example of regular route:
   #   get 'products/:id' => 'catalog#view'
 
+  get '/signup', :to => 'registrations#new'
+  post '/signup', :to => 'registrations#create'
+
   resources :lists, only: [:index, :show]
 
   resource :payment
