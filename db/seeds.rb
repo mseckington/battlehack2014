@@ -5,3 +5,10 @@
 #
 #   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
 #   Mayor.create(name: 'Emanuel', city: cities.first)
+
+List.create(
+  username: 'testaccount',
+  image: 'https://farm4.staticflickr.com/3178/3018620815_0a16128a42_q.jpg',
+  title: 'Melinda & Cristiano',
+  description: "Yay, we're getting married!"
+)
