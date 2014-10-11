@@ -1,0 +1,12 @@
+#sign-up-form {
+  section {
+    background-color: lighten($secondary-color, 60%);
+    padding: 20px;  
+    margin-bottom: 20px;  
+
+    h2 {
+      font-size: $h3-font-size;
+      margin-bottom: 20px;
+    }
+  }
+}

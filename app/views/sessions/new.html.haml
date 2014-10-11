@@ -1,10 +1,22 @@
+%article.row{:id => "log-in-form"}
+  %section.small-12.medium-6.columns
+    %div
+      %header
+        %h1 Log in
+      = form_tag(login_path) do
 
-= form_tag(login_path) do
+        = label_tag :email, 'Email address*'
+        = email_field_tag :email, params[:email]
 
-  = label_tag :email, 'Email address*'
-  = email_field_tag :email, params[:email]
+        = label_tag :password, 'Password*'
+        = password_field_tag :password, params[:password]
 
-  = label_tag :password, 'Password*'
-  = password_field_tag :password, params[:password]
+        = button_tag "Sign in"
+  %section.small-12.medium-6.columns
+    %div
+      %header
+        %h1 Sign up
+      %p Sign up to create your own wedding list
+      = link_to 'Sign Up', signup_path, class: "button"
 
-  = button_tag "Sign in"
+
