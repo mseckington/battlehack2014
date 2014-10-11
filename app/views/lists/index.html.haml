@@ -1,7 +1,19 @@
-%h1 Lists
-%ul.lists.row
-  - @lists.each do |list|
-    %li.medium-4.columns
-      = image_tag list.image
-      %h1
-        = link_to list.title, list_path(list)
+.grey
+  .row
+    .medium-10.columns
+
+      %p.large
+        Ever gone to a wedding and all the gifts on the wedding list are too expensive for just one person? WeddingLy.st allows every guest to contribute however much they want, which then gets split between a total gift kitty and a charity of the couple's choice.
+      %p
+        Odit pariatur dolor commodi explicabo, esse sed magni obcaecati minima aliquam, quas et architecto maiores reiciendis optio debitis nemo, perspiciatis qui magnam ducimus mollitia ipsa fugit amet accusantium, neque. Delectus ipsum iure, quibusdam itaque repellendus laboriosam alias quae officia! Et laudantium autem fugiat, illo assumenda neque architecto! Ea illum nostrum aliquam reprehenderit veritatis eaque possimus perferendis.
+
+.row
+  %h1
+    Recent Lists
+
+  %ul.lists.row
+    - @lists.each do |list|
+      %li.medium-4.columns
+        = image_tag list.image
+        %h1
+          = link_to list.title, list_path(list)
