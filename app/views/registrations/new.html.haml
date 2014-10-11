@@ -1,0 +1,28 @@
+.register_form
+  = form_for(@list, url: signup_path) do |f|
+    = field_group_for(@list, :username) do
+      = f.label :username, 'Email address*'
+      = f.text_field :username, :autofocus => true
+      = error_message_for(@list, :username)
+    = field_group_for(@list, :password) do
+      = f.label :password, 'Password*'
+      = f.password_field :password, value: @list.password
+      = error_message_for(@list, :password)
+    = field_group_for(@list, :password_confirmation) do
+      = f.label :password_confirmation, 'Password confirmation*'
+      = f.password_field :password_confirmation, value: @list.password_confirmation
+      = error_message_for(@list, :password_confirmation)
+    = field_group_for(@list, :title) do
+      = f.label :title, 'Title*'
+      = f.text_field :title
+      = error_message_for(@list, :title)
+    = field_group_for(@list, :description) do
+      = f.label :description, 'Description*'
+      = f.text_field :description
+      = error_message_for(@list, :description)
+    = field_group_for(@list, :image) do
+      = f.label :image, 'Image file*'
+      = f.text_field :image
+      = error_message_for(@list, :image)
+
+    = button_tag "Register", class: 'btn btn--small'
