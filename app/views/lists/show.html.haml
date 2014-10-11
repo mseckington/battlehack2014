@@ -9,23 +9,20 @@
         %p.button.button-med
           Contribute to #{@list.title}'s list 
 
-%section.small-12.columns.show-for-small-only 
-  #thermometer
-  %p
-    This is a description of how far we've reached the target.
-
 .row
-  %section.donate.small-12.medium-10.columns
-    %ul.products
-      - @list.products.each do |product|
-        %li.row
-          .small-2.columns
-            =image_tag product.image
-          .small-10.columns
-            %h3= product.name
-            .description= product.description
-            .price= formatted_price(product.price)
+  .small-12.column
 
-  .thermometer-container.medium-2.columns
-    #thermometer
+    %section.thermometer-container
+      #thermometer
 
+    %section.products-container
+      %ul.products
+        - @list.products.each do |product|
+          %li.row
+            .marker
+            .small-2.columns
+              =image_tag product.image
+            .small-10.columns
+              %h3= product.name
+              .description= product.description
+              .price= formatted_price(product.price)

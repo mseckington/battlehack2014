@@ -21,19 +21,19 @@
   }
 }
 
-.donate {
-  header {
-    h1 {
-      font-size: $h2-font-size;
-    }
-  }
+.products-container {
+  display: inline-block;
+  position: relative;
+  width: 90%;
+  float: left;
+  padding-left: 40px;
 
   .products {
     @include list-reset();
 
     li {
-      border-bottom: $line-style;
       @include list-reset();
+      border-bottom: $line-style;
       margin: 20px 0;
       padding: 10px 0;
 
@@ -51,3 +51,20 @@
     }
   }
 }
+
+.thermometer-container {
+  position: relative;
+  display: inline-block;
+  width: 5%;
+  float: left;
+}
+
+.marker {
+  border-top: $line-style;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  height: 1px;
+  width: 40px;
+}
+
