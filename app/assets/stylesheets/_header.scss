@@ -1,7 +1,7 @@
 header#global {
   background: $primary-color;
   text-align: center;
-  padding: 10px 0 15px 0;
+  padding: 15px 0 25px 0;
   border-top: 6px solid $secondary-color;
   
   span {
@@ -23,6 +23,18 @@ header#global {
 
       a {
         color: white;
+      }
+
+      &.log-in {
+        @extend .button;
+        background-color: $secondary-color;
+        font-size: 1.125rem;
+      }
+
+      &.sign-up {
+        border-bottom: 4px solid $secondary-color;
+        padding-right: 0;
+        padding-left: 0;
       }
     }
 
