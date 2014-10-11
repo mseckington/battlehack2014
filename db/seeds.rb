@@ -12,6 +12,7 @@ Product.delete_all
 list = List.create(
   id: 1,
   username: 'testaccount',
+  password_digest: 'jkhaddsajkfhsf',
   image: 'http://missgeeky.com/wp-content/uploads/2014/10/mc.jpg',
   title: 'Melinda & Cristiano',
   description: "Yay, we're getting married!"
@@ -27,3 +28,12 @@ Product.create([
     list: list
   }
 ])
+
+list = List.create(
+  id: 2,
+  username: 'another_testaccount',
+  password_digest: 'hkasdfajksdfkajs',
+  image: 'http://images.intouchweekly.com/uploads/posts/image/42278/brad-pitt-angelina-jolie-marriage-wedding.jpg?crop=top&fit=clip&h=500&w=698',
+  title: 'Brad & Angelina',
+  description: "Omg, we're like totally in love and getting like married."
+)
