@@ -29,6 +29,22 @@ Product.create([
   }
 ])
 
+Donation.create([
+  { price: 9999,
+    message: "So so so happy for you",
+    twitter_id: "vikings",
+    list_id: 1,
+  }
+])
+
+Donation.create([
+  { price: 5217,
+    message: "couldnt buy you a sandbox",
+    twitter_id: "paypaldev",
+    list_id: 1,
+  }
+])
+
 list = List.create(
   id: 2,
   username: 'another_testaccount',
