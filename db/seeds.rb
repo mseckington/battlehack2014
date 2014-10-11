@@ -29,6 +29,22 @@ Product.create([
   }
 ])
 
+Donation.create([
+  { price: 9999,
+    message: "So so so happy for you",
+    twitter_id: "vikings",
+    list_id: 1,
+  }
+])
+
+Donation.create([
+  { price: 5217,
+    message: "couldnt buy you a sandbox",
+    twitter_id: "paypaldev",
+    list_id: 1,
+  }
+])
+
 list = List.create(
   id: 2,
   username: 'another_testaccount',
@@ -36,4 +52,13 @@ list = List.create(
   image: 'http://images.intouchweekly.com/uploads/posts/image/42278/brad-pitt-angelina-jolie-marriage-wedding.jpg?crop=top&fit=clip&h=500&w=698',
   title: 'Brad & Angelina',
   description: "Omg, we're like totally in love and getting like married."
+)
+
+list = List.create(
+  id: 3,
+  username: 'nph_testaccount',
+  password_digest: 'qwertyupoe',
+  image: 'http://uk.eonline.com/resize/500/500/eol_images/Entire_Site/201488/rs_300x300-140908055559-600.Neil-Patrick-Harris-David-Burtka-Wedding-JR-90814.jpg',
+  title: 'Neil & David',
+  description: "Our wedding's going to be, legen-dary!"
 )

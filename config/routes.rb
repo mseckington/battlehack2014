@@ -16,9 +16,13 @@ Rails.application.routes.draw do
   delete '/login', :to => 'sessions#destroy', :as => 'delete_session'
   get '/logout', :to => 'sessions#destroy'
 
+  root 'lists#index'
+
+  get '/about', :to => 'details#about'
+
   resources :lists, only: [:index, :show]
 
-  resource :payment
+  resource :payment, only: [:new, :create, :update]
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
   #   get 'products/:id/purchase' => 'catalog#purchase', as: :purchase

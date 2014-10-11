@@ -3,7 +3,7 @@
   %head
     %meta{:charset => "utf-8"}/
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
-    %title= content_for?(:title) ? yield(:title) : "foundation-rails"
+    %title= content_for?(:title) ? yield(:title) : "WeddingLy.st"
     = stylesheet_link_tag    "application"
     = javascript_include_tag "vendor/modernizr"
     %script{:src => "https://js.braintreegateway.com/v2/braintree.js"}
@@ -12,7 +12,8 @@
     %header#global
       .row
         %h1.medium-6.columns
-          Wedding#{ content_tag(:span) { 'ly.st' }}
+          = link_to root_path do
+            Wedding#{ content_tag(:span) { 'ly.st' }}
         %ul.medium-6.columns
           %li
             %a{:href => "/about"} About
@@ -27,4 +28,15 @@
       = javascript_include_tag "application"
     %footer
       .row
-        %p Please give me some footery love.
+        %p 
+        Made at
+        %a{:href => "http://www.battlehack.org"} BattleHack
+        by
+        = succeed "," do
+          %a{:href => "http://www.twitter.com/mseckington"} Melinda Seckington
+        = succeed "," do
+          %a{:href => "http://www.twitter.com/lily_dart"} Lily Dart
+        %a{:href => "http://www.twitter.com/kevinprince"} Kevin Prince
+        and
+        = succeed "." do
+          %a{:href => "http://www.twitter.com/_ianw"} Ian Dow-Wright
