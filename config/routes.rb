@@ -18,6 +18,8 @@ Rails.application.routes.draw do
 
   root 'lists#index'
 
+  get '/about', :to => 'details#about'
+
   resources :lists, only: [:index, :show]
 
   resource :payment
