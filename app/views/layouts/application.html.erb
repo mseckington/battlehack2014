@@ -12,8 +12,21 @@
   </head>
 
   <body>
+    <div class="wrapper">
+      <header class="global-header">
+        <h1>weddingly.st</h1>
+        <form>
+          <input type="text" placeholder="username">
+          <input type="text" placeholder="password">
+          <input type="submit" value="login">
+        </form>
+        <div class="btn">
+          Sign Up
+        </div>
+      </header>
 
-    <%= yield %>
-    <%= javascript_include_tag "application" %>
+      <%= yield %>
+      <%= javascript_include_tag "application" %>
+    </div>
   </body>
 </html>
