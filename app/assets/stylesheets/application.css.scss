@@ -15,12 +15,12 @@
 
  */
 
-// Foundation
-@import "foundation_and_overrides";
-
 // Fonts
 @import url(http://fonts.googleapis.com/css?family=Playfair+Display);
 @import url(http://fonts.googleapis.com/css?family=Fauna+One);
+
+// Foundation
+@import "foundation_and_overrides";
 
 // Shared
 @import "variables";
