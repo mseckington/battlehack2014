@@ -18,6 +18,7 @@
           %li
             %a{:href => "/about"} About
           - if signed_in?
+            %li= link_to 'Edit our list', edit_list_path(current_account)
             %li= link_to 'Log out', logout_path
           - else
             %li{:class => "sign-up"}= link_to 'Sign Up', signup_path
@@ -28,7 +29,7 @@
       = javascript_include_tag "application"
     %footer
       .row
-        %p 
+        %p
         Made at
         %a{:href => "http://www.battlehack.org"} BattleHack
         by

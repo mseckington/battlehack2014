@@ -1,0 +1,44 @@
+%article.couple
+  %header
+    .row
+      .small-12.medium-4.columns
+        =image_tag @list.image
+      .small-12.medium-8.columns
+        %h1= @list.title
+        %p= @list.description
+
+
+        .register_form
+          = form_for(@list) do |f|
+            = field_group_for(@list, :title) do
+              = f.label :title, 'Title*'
+              = f.text_field :title
+              = error_message_for(@list, :title)
+            = field_group_for(@list, :description) do
+              = f.label :description, 'Description*'
+              = f.text_field :description
+              = error_message_for(@list, :description)
+            = field_group_for(@list, :image) do
+              = f.label :image, 'Image file*'
+              = f.text_field :image
+              = error_message_for(@list, :image)
+
+            = button_tag "Update", class: 'btn btn--small'
+
+.row
+  .small-12.column
+
+    %section.thermometer-container
+      #thermometer
+
+    %section.products-container
+      %ul.products
+        - @list.products.each do |product|
+          %li.row
+            .marker
+            .small-2.columns
+              =image_tag product.image
+            .small-10.columns
+              %h3= product.name
+              .description= product.description
+              .price= formatted_price(product.price)

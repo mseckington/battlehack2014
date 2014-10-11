@@ -20,7 +20,7 @@ Rails.application.routes.draw do
 
   get '/about', :to => 'details#about'
 
-  resources :lists, only: [:index, :show]
+  resources :lists, only: [:index, :show, :edit, :update]
 
   resource :payment, only: [:new, :create, :update]
 
