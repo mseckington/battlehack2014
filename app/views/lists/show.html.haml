@@ -5,3 +5,10 @@
   = @list.description
 
 =image_tag @list.image
+
+%p
+  - @list.products.each do |product|
+    =image_tag product.image
+    %h2= product.name
+    = product.description
+    = formatted_price(product.price)
