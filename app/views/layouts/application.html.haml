@@ -1,0 +1,29 @@
+!!!
+%html{:lang => "en"}
+  %head
+    %meta{:charset => "utf-8"}/
+    %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}/
+    %title= content_for?(:title) ? yield(:title) : "foundation-rails"
+    = stylesheet_link_tag    "application"
+    = javascript_include_tag "vendor/modernizr"
+    %script{:src => "https://js.braintreegateway.com/v2/braintree.js"}
+    = csrf_meta_tags
+  %body
+    %header#global
+      .row
+        %h1.medium-6.columns
+          Wedding
+          %span.lyst ly.st
+        %ul.medium-6.columns
+          %li
+            %a{:href => "login"} Login
+          %li
+            %a{:href => "signup"} Sign Up
+          %li
+            %a{:href => "about"} About
+    .row
+      = yield
+      = javascript_include_tag "application"
+    %footer
+      .row
+        %p Please give me some footery love.
