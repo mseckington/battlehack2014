@@ -36,20 +36,28 @@
         width: 100%;
       }
     }
-
-    .charity_logo img {
-      width: 100px;
-      height: 100px;
-      padding: 0;
-      position: absolute;
-      bottom: 0px;
-      left: 0px;
-    }
   }
 
   .total {
-    // background-color: lighten($secondary-color, 60%);
-    padding: 20px;  
+    margin-bottom: 30px;
+
+    h1 {
+      font-size: $h2-font-size;
+      margin-bottom: 0;
+    }
+    
+    h2 {
+      font-size: $h3-font-size;
+      color: $secondary-color;
+    }
+
+    .charity_logo {
+      position: absolute;
+      top: 0;
+      right: 0;
+      width: 100px;
+      height: 100px;
+    }
   }
 }
 
