@@ -1,11 +1,23 @@
 ul.lists {
-  @include list-reset();
-
   li {
-    text-align: center;
+      text-align: center;
     img {
-      width: 90%;
-      border-radius: 50%;
+      
+        border-radius: 50%;
+    }
+  }
+}
+
+@media #{$medium-up} {
+
+  ul.lists {
+    @include list-reset();
+
+    li {
+      img {
+        width: 90%;
+        border-radius: 50%;
+      }
     }
   }
 }
