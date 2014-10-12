@@ -81,3 +81,12 @@ list = List.create(
   title: 'Ellen & Portia',
   description: "Aren't we cute!"
 )
+
+list = List.create(
+  id: 6,
+  username: 'the_obamams_testaccount',
+  password_digest: 'mnadioafdjjk',
+  image: 'http://uk.eonline.com/resize/500/500/eol_images/Entire_Site/2013119/rs_300x300-131209084538-600.michelle-obama-barack.ls.12913.jpg',
+  title: 'Barack & Michelle',
+  description: "Aren't we cute!"
+)
