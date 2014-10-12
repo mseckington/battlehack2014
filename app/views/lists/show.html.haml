@@ -31,7 +31,7 @@
               %h3= product.name
               .description= product.description
               .price= formatted_price(product.price)
-
+    .clearfix
     %section.donations
       %ul.donations
         - @list.donations.each do |donation|
