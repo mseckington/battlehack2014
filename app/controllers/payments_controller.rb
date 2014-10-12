@@ -23,6 +23,6 @@ class PaymentsController < ApplicationController
     payment.save
 
     #TODO: Add flash message final thankyou and go to actual list
-    redirect_to lists_path
+    redirect_to list_path(payment.list)
   end
 end
