@@ -5,5 +5,14 @@ $(function(){
 
   $(".product-display").css("height", productsHeight);
   $("#thermometer").css("height", productsHeight);
-  $("#thermometer #bar").css("height", thermometerPercentage);
+
+
+  $(window).on('scroll', function() {
+    var y_scroll_pos = window.pageYOffset;
+    var scroll_pos_test = 300;            
+
+    if(y_scroll_pos > scroll_pos_test) {
+      $("#thermometer #bar").animate({ height: thermometerPercentage }, 1000);
+    }
+  });
 });
