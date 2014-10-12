@@ -35,8 +35,11 @@
 
   .row
     %section.donations
+      %h1 Guests
       %ul.donations
         - @list.donations.each do |donation|
-          %li
-            %h3= "@#{donation.twitter_id}"
-            %p= donation.message
+          %li.row
+            .medium-2.columns
+              = image_tag donation.twitter_id
+            %p.triangle-border.left.medium-8.columns
+              =donation.message

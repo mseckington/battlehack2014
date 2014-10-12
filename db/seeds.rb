@@ -23,7 +23,7 @@ list = List.create(
 Donation.create([
   { price: 9999,
     message: "So so so happy for you",
-    twitter_id: "https://pbs.twimg.com/profile_images/424859232555380736/fG0Yl7aZ.jpeg",
+    twitter_id: "https://pbs.twimg.com/profile_images/418422190359343104/UQXoTiOR.jpeg",
     list_id: 1,
   }
 ])
@@ -31,7 +31,7 @@ Donation.create([
 Donation.create([
   { price: 5217,
     message: "couldnt buy you a sandbox",
-    twitter_id: "https://pbs.twimg.com/profile_images/510436387959472128/d4IKagvh.jpeg",
+    twitter_id: "https://pbs.twimg.com/profile_images/3483345751/d800abf7c02334fce41ec798b76138ae.jpeg",
     list_id: 1,
   }
 ])
