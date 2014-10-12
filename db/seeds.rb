@@ -30,6 +30,36 @@ Product.create([
   }
 ])
 
+Product.create([
+  { name: "Wahl 2 Slice Toaster",
+    price: 1399,
+    description: "A great little toaster, cheap and cheerful, it does what it says on the box, it makes toast!!! Obviously not full of the features like the expensive ones, but hey toast is toast.",
+    image: "http://ecx.images-amazon.com/images/I/51l1aqA8bjL._SL1500_.jpg",
+    position: 1,
+    list_id: 2
+  }
+])
+
+Product.create([
+  { name: "Wahl 2 Slice Toaster",
+    price: 1399,
+    description: "A great little toaster, cheap and cheerful, it does what it says on the box, it makes toast!!! Obviously not full of the features like the expensive ones, but hey toast is toast.",
+    image: "http://ecx.images-amazon.com/images/I/51l1aqA8bjL._SL1500_.jpg",
+    position: 3,
+    list_id: 1
+  }
+])
+
+Product.create([
+  { name: "Tefal Intensium 28 cm Stirfry",
+    price: 1650,
+    description: "Tefal has invented a revolutionery new coating that last's up to 2x longer than most other non-stick cookware brands. This Intensium range comes with 9 layers of non-stick which possesses superior durability and resistant performance making this coating the most durable.",
+    image: "http://ecx.images-amazon.com/images/I/71pgyOY77zL._SL1500_.jpg",
+    position: 2,
+    list_id: 1
+  }
+])
+
 Donation.create([
   { price: 9999,
     message: "So so so happy for you",
