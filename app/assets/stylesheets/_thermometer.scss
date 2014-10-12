@@ -1,5 +1,75 @@
-#thermometer {
-  height: 300px;
-  background-color: grey;
-  width: 50px;
+.product-display {
+  height: 500px;
+}
+
+.products-container {
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  padding-left: 80px;
+  z-index: 100;
+
+  .products {
+    @include list-reset();
+
+    li {
+      @include list-reset();
+      margin: 20px 0;
+      padding: 10px 0;
+      position: relative;
+
+      .price {
+        font-size: $h4-font-size;
+        position: absolute;
+        top: 0;
+        right: 0;
+      }
+
+      .marker {
+        border-top: 1px solid $primary-color;
+        position: absolute;
+        top: 50%;
+        left: -80px;
+        height: 1px;
+        width: 80px;
+      }
+    }
+  }
+}
+
+.thermometer-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 5%;
+
+  #thermometer {
+    height: 500px;
+    width: 50px;
+    border: 1px solid $primary-color;
+    border-radius: 30px;
+    position: relative;
+    z-index: 0;
+  }
+
+  #bar {
+    width: 48px;
+    height: 300px;
+    background: #3f4c6b; /* Old browsers */
+    background: -moz-linear-gradient(top, #3f4c6b 0%, #e6324b 100%); /* FF3.6+ */
+    background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4c6b), color-stop(100%,#e6324b)); /* Chrome,Safari4+ */
+    background: -webkit-linear-gradient(top, #3f4c6b 0%,#e6324b 100%); /* Chrome10+,Safari5.1+ */
+    background: -o-linear-gradient(top, #3f4c6b 0%,#e6324b 100%); /* Opera 11.10+ */
+    background: -ms-linear-gradient(top, #3f4c6b 0%,#e6324b 100%); /* IE10+ */
+    background: linear-gradient(to bottom, #3f4c6b 0%,#e6324b 100%); /* W3C */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#e6324b',GradientType=0 ); /* IE6-9 */
+    position: absolute;
+    top: 1px;
+    left: 1px;
+    z-index: 50;
+    border-top-left-radius: 30px;
+    border-top-right-radius: 30px;
+    border: 2px solid white;
+  }
 }

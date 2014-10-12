@@ -35,6 +35,8 @@ gem 'spring',        group: :development
 gem 'bcrypt', '~> 3.1.7'
 
 gem 'braintree'
+gem 'twilio-ruby'
+gem 'sendgrid-ruby'
 
 # Use unicorn as the app server
 # gem 'unicorn'
