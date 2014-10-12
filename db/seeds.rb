@@ -17,7 +17,7 @@ list = List.create(
   password_confirmation: 'test',
   image: 'http://missgeeky.com/wp-content/uploads/2014/10/mc.jpg',
   title: 'Melinda & Cristiano',
-  description: "Yay, we're getting married!"
+  description: "Yay, we're getting married! We hope you can join us on the 15th of May 2015 at the Old Town Hall. We've chosen to support Wish Upon A Wedding, a charity to help couples facing terminal illness and serious life-changing circumstances in creating their dream wedding."
 )
 
 Donation.create([
