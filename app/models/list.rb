@@ -18,4 +18,18 @@ class List < ActiveRecord::Base
   def total_gifts
     donations.sum(:price)
   end
+
+  def progress_bar
+    total = total_gifts.to_f * 0.8
+    p = products.pluck(:price)
+    p.each_with_index do |price, index|
+      if price < total
+        total = total - price
+      else
+        return ((total.to_f / price) + index)/p.size
+      end
+    end
+
+    return 1
+  end
 end
