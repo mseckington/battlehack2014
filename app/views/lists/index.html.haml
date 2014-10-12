@@ -3,11 +3,11 @@
     .row
       %h1.medium-12.columns
         Keep your guests happy and your wedding presents awesome, while giving to charity
-        
+
       %p.large.medium-10.columns
-        %strong WeddingLy.st 
+        %strong WeddingLy.st
         allows your guests to contribute however much they are able to, without revealing the amount to you or your other attendees. Each contribution then gets split between a total gift kitty and a charity of your choice.
-        
+
       %p.medium-12.columns
         = link_to 'Create your own wedding list', signup_path, :class => 'button'
 
@@ -18,6 +18,6 @@
     %ul.lists.row
       - @lists.each do |list|
         %li.medium-4.columns
-          = link_to image_tag list.image
+          = link_to image_tag(list.image), list_path(list)
           %h1
             = link_to list.title, list_path(list)
