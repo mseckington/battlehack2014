@@ -8,6 +8,7 @@
 
 List.delete_all
 Product.delete_all
+Donation.delete_all
 
 list = List.create(
   id: 1,

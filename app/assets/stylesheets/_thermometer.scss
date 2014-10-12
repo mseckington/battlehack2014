@@ -1,5 +1,6 @@
 .product-display {
-  height: 500px;
+  height: auto;
+  margin-bottom: 30px;
 }
 
 .products-container {
@@ -27,12 +28,13 @@
       }
 
       .marker {
-        border-top: 1px solid $primary-color;
+        border-bottom: 1px solid $primary-color;
+        border-right: 1px solid $primary-color;
         position: absolute;
-        top: 50%;
+        bottom: 0;
         left: -80px;
-        height: 1px;
-        width: 80px;
+        height: 10px;
+        width: 150px;
       }
     }
   }
@@ -45,7 +47,7 @@
   width: 5%;
 
   #thermometer {
-    height: 500px;
+    height: auto;
     width: 50px;
     border: 1px solid $primary-color;
     border-radius: 30px;
@@ -55,7 +57,7 @@
 
   #bar {
     width: 48px;
-    height: 300px;
+    height: auto;
     background: #3f4c6b; /* Old browsers */
     background: -moz-linear-gradient(top, #3f4c6b 0%, #e6324b 100%); /* FF3.6+ */
     background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#3f4c6b), color-stop(100%,#e6324b)); /* Chrome,Safari4+ */
@@ -66,7 +68,7 @@
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3f4c6b', endColorstr='#e6324b',GradientType=0 ); /* IE6-9 */
     position: absolute;
     top: 1px;
-    left: 1px;
+    left: 0px;
     z-index: 50;
     border-top-left-radius: 30px;
     border-top-right-radius: 30px;
