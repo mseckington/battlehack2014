@@ -32,3 +32,9 @@
               .description= product.description
               .price= formatted_price(product.price)
 
+    %section.donations
+      %ul.donations
+        - @list.donations.each do |donation|
+          %li
+            %h3= "@#{donation.twitter_id}"
+            %p= donation.message
