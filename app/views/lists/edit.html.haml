@@ -38,3 +38,6 @@
               .description= product.description
               .price= formatted_price(product.price)
               = link_to "Update product", edit_product_path(product), class: "button tiny"
+
+
+  = link_to "Add a product", new_product_path, class: "button button-med"
