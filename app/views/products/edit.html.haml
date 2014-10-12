@@ -1,0 +1,24 @@
+%article.row
+  .small-12.medium-8.columns
+    %section
+      %h2 Update product
+
+      = form_for(@product) do |f|
+        = field_group_for(@product, :name) do
+          = f.label :name, 'Name*'
+          = f.text_field :name
+          = error_message_for(@product, :name)
+        = field_group_for(@product, :description) do
+          = f.label :description, 'Description*'
+          = f.text_field :description
+          = error_message_for(@product, :description)
+        = field_group_for(@product, :price) do
+          = f.label :price, 'Price*'
+          = f.text_field :price
+          = error_message_for(@product, :price)
+        = field_group_for(@product, :image) do
+          = f.label :image, 'Image file*'
+          = f.text_field :image
+          = error_message_for(@product, :image)
+
+        = button_tag "Update", class: "button button-med"

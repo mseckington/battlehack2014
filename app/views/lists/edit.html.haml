@@ -22,7 +22,7 @@
               = f.text_field :image
               = error_message_for(@list, :image)
 
-            = button_tag "Update", class: 'btn btn--small'
+            = button_tag "Update", class: "button button-med"
 
 .row
   .small-12.column
@@ -37,3 +37,4 @@
               %h3= product.name
               .description= product.description
               .price= formatted_price(product.price)
+              = link_to "Update product", edit_product_path(product), class: "button tiny"
