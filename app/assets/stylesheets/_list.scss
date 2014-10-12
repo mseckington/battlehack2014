@@ -38,10 +38,18 @@
     }
 
     .charity_logo img {
-      width: 150px;
-      height: 134px;
+      width: 100px;
+      height: 100px;
       padding: 0;
+      position: absolute;
+      bottom: 0px;
+      left: 0px;
     }
+  }
+
+  .total {
+    // background-color: lighten($secondary-color, 60%);
+    padding: 20px;  
   }
 }
 
