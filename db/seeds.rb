@@ -63,3 +63,21 @@ list = List.create(
   title: 'Neil & David',
   description: "Our wedding's going to be, legen-dary!"
 )
+
+list = List.create(
+  id: 4,
+  username: 'emma_andrew_testaccount',
+  password_digest: 'glatmourat3am',
+  image: 'http://uk.eonline.com/resize/500/500/eol_images/Entire_Site/2014311/rs_300x300-140411173938-600.Emma-Stone-Andrew-Garfield-The-amazing-SpiderMan2-Premimere-Paris.ms.041114.jpg',
+  title: 'Emma & Andrew',
+  description: "Aren't we cute!"
+)
+
+list = List.create(
+  id: 5,
+  username: 'ellen_portia_testaccount',
+  password_digest: 'poiuhbo',
+  image: 'http://uk.eonline.com/resize/500/500/eol_images/Entire_Site/2012322/300.portia.ellen.cm.42212.jpg',
+  title: 'Ellen & Portia',
+  description: "Aren't we cute!"
+)

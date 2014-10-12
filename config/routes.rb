@@ -22,6 +22,8 @@ Rails.application.routes.draw do
 
   resources :lists, only: [:index, :show, :edit, :update]
 
+  resources :products, only: [:edit, :update, :new, :create]
+
   resource :payment, only: [:new, :create, :update]
 
   # Example of named route that can be invoked with purchase_url(id: product.id)
