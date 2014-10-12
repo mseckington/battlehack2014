@@ -17,10 +17,8 @@
   .product-display.small-12.columns
 
     %section.thermometer-container
-      #thermometer
-      #bar
-      = @list.progress_bar
-      = @list.products.size
+      #thermometer{:data => {:progress => "#{@list.progress_bar}"}}
+      #bar{:data => {:elements => "#{@list.products.size}"}}
 
     %section.products-container
       %ul.products
