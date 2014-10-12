@@ -1,13 +1,14 @@
-.message_form
-  %h4 Thankyou for giving to {Couples Name}'s Wedding List
+%article.couple.row
+  %header.small-12.columns
+    %h2 Thank you for contributing to #{@payment.list.title}'s Wedding List
 
-  =form_tag("/payment", method: :put) do
-    =label_tag(:message, "Leave a nice message to accompany your gift:")
-    =text_field_tag(:message)
+    =form_tag("/payment", method: :put) do
+      =label_tag(:message, "Leave a nice message to accompany your gift:")
+      =text_field_tag(:message)
 
-    =label_tag(:twitter_id, "Your twitter account:")
-    =text_field_tag(:twitter_id)
+      =label_tag(:twitter_id, "Your twitter account:")
+      =text_field_tag(:twitter_id)
 
-    =hidden_field_tag(:payment_id, @payment.id)
+      =hidden_field_tag(:payment_id, @payment.id)
 
-    =submit_tag("Add a message")
+      =submit_tag("Add a message", class: "button button-med")
